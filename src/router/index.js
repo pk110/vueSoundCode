@@ -11,7 +11,7 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
-     // 直接指定首页的页面
+     // 直接指定首页的页面   以下可以指定任意的path下的路径
     {
       path:'/',
       redirect: '/home'
