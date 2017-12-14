@@ -12,9 +12,13 @@ Vue.use(Router)
 export default new Router({
   routes: [
      // 直接指定首页的页面   以下可以指定任意的path下的路径
+    //并且可以有多个如下的操作  比如访问/between路径的时候 直接就访问的/between/betweenA 这样就不存在访问/between里的路由的第一页不加载的问题
     {
       path:'/',
       redirect: '/home'
+    },{
+      path:'/between',
+      redirect: '/between/betweenA'
     },
     {
       // 以根目录为初始显示
